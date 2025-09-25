@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function Home() {
   return (
     <main>
@@ -10,11 +12,7 @@ export default function Home() {
         <div className="home-card">
           <div className="home-card-content">
             <h2 className="home-card-title">Countries</h2>
-            <img
-              src={new URL("images/countries-icon-.png", import.meta.env.BASE_URL).href}
-              alt="Countries icon"
-              className="home-icons"
-            />
+            <img src={`${BASE}images/countries-icon-.png`} alt="Countries icon" className="home-icons" />
           </div>
           <Link className="btn" to="/countries">Study countries</Link>
         </div>
@@ -22,11 +20,7 @@ export default function Home() {
         <div className="home-card">
           <div className="home-card-content">
             <h2 className="home-card-title">Collection</h2>
-            <img
-              src={new URL("images/collection-icon-.png", import.meta.env.BASE_URL).href}
-              alt="Collection icon"
-              className="home-icons"
-            />
+            <img src={`${BASE}images/collection-icon-.png`} alt="Collection icon" className="home-icons" />
           </div>
           <Link className="btn" to="/collection">Collection</Link>
         </div>
@@ -34,11 +28,7 @@ export default function Home() {
         <div className="home-card">
           <div className="home-card-content">
             <h2 className="home-card-title">Quiz</h2>
-            <img
-              src={new URL("images/quiz-icon-.png", import.meta.env.BASE_URL).href}
-              alt="Quiz icon"
-              className="home-icons"
-            />
+            <img src={`${BASE}images/quiz-icon-.png`} alt="Quiz icon" className="home-icons" />
           </div>
           <Link className="btn" to="/quiz">Quiz</Link>
         </div>
@@ -46,11 +36,7 @@ export default function Home() {
         <div className="home-card">
           <div className="home-card-content">
             <h2 className="home-card-title">Leaderboard</h2>
-            <img
-              src={new URL("images/leaderboard-icon---.png", import.meta.env.BASE_URL).href}
-              alt="Leaderboard icon"
-              className="home-icons"
-            />
+            <img src={`${BASE}images/leaderboard-icon---.png`} alt="Leaderboard icon" className="home-icons" />
           </div>
           <Link className="btn" to="/leaderboard">Leaderboard</Link>
         </div>
